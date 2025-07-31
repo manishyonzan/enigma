@@ -214,6 +214,10 @@ main {
         width: 50%;
     }
 
+    .header-hero--left_logodiv{
+        width:5rem;
+    }
+
     .header-hero--left_top__title {
         font-size: 1rem;
         line-height: 1rem;
