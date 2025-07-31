@@ -1,0 +1,102 @@
+.service {
+    width: var(--contentWidth);
+    padding: 3rem 0rem;
+}
+
+.service-head {
+    text-align: center;
+    padding-bottom: 0.5rem;
+}
+
+.service-head h4 {
+    color: rgb(20, 20, 71);
+    padding-bottom: 0.5rem;
+}
+
+.service-head h2 {
+
+    color: rgb(20, 20, 71);
+}
+
+.service-head p {
+    padding: 0rem 6rem;
+    color: rgb(20, 20, 71);
+
+}
+
+
+
+.service-bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 3rem;
+    gap: 0.5rem;
+}
+
+.service-bottom--icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 18%;
+    border: 1px solid #e0e0e0;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.service-bottom--icon_logo {
+    width: 40%;
+}
+
+.service-bottom--icon_logo img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+}
+
+@media screen and (max-width:1250px) {
+    .service {
+        width: 100%;
+        padding: 0.5rem;
+    }
+}
+
+
+@media screen and (max-width:760px) {
+    .service {
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+
+    .service-head p {
+        padding: 0rem;
+    }
+
+    .service-bottom {
+        padding: 0.5rem 0rem;
+    }
+
+    .service-bottom--icon {
+        width: 30%;
+    }
+
+
+    .service-bottom--icon_logo {
+        width: 90%;
+    }
+
+    .service-bottom--icon_name {
+        font-size: 0.5rem;
+
+    }
+
+
+    .service-bottom {
+        display: flex;
+        justify-content: center;
+    }
+
+}

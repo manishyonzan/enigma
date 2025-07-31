@@ -1,0 +1,251 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Cormorant Garamond", serif;
+    font-family: "Lato", sans-serif;
+    font-family: "Comic Sans MS", "Arial Rounded MT Bold", Verdana, sans-serif;
+    ;
+    font-style: normal;
+    scroll-behavior: smooth;
+    --contentWidth: 1250px;
+}
+
+/* body {} */
+
+main {
+    background: #ffffff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    clip-path: polygon(100% 0, 100% 58%, 82% 98%, 0 78%, 0 0);
+    background-color: rgb(162, 89, 255);
+    background-image: url("background.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 5rem;
+
+}
+
+.header-navbar {
+    width: var(--contentWidth);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+
+.header-navbar--left_logodiv {
+    width: auto;
+    height: 3rem;
+}
+
+.header-navbar--left_logodiv img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+}
+
+
+.header-hero {
+    width: var(--contentWidth);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.header-navbar--right li {
+    list-style: none;
+    padding: 0 1rem;
+
+}
+
+.header-navbar--right li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.header-navbar--right .link {
+    color: rgb(162, 89, 255);
+    background-color: #ffffff;
+    padding: 0.3rem 1rem;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 0.5rem;
+
+}
+
+.header-navbar--right a:hover {
+    outline: none;
+}
+
+.header-navbar--right {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+
+.header-hero--left {
+    padding: 2rem 0rem;
+    width: 40%;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.header-hero--left_bottom {
+    display: flex;
+    gap: 1rem;
+}
+
+.header-hero--left_bottom__first {
+    background-color: #ffffff;
+    border: none;
+    padding: 0.5rem 1rem;
+    color: rgb(162, 89, 255);
+    border-radius: 0.5rem;
+    margin: 10px 0px;
+    text-decoration: none
+}
+
+.header-hero--left_bottom__second {
+    background-color: rgb(20, 20, 71);
+    border: none;
+    padding: 0.5rem 1rem;
+    color: #ffffff;
+    border-radius: 0.5rem;
+    margin: 10px 0px;
+    text-decoration: none
+}
+
+.header-hero--left_bottom__first:active {
+    transform: scale(0.9);
+    transition: 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.header-hero--left_bottom__second:active {
+    transform: scale(0.9);
+    transition: 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+
+
+.header-hero--left_top__title {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.header-hero--left_top__call {
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+@media screen and (max-width: 1250px) {
+
+    main {
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+    }
+
+    .header {
+        height: 500px;
+    }
+
+    .header-navbar {
+        width: 100%;
+    }
+
+    .header-hero {
+        width: 100%;
+        height: 50%;
+    }
+}
+
+@media screen and (max-width:1249px) {
+
+    .header-hero--left_top__title {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .header {
+        height: 400px;
+    }
+}
+
+@media screen and (max-width:760px) {
+
+
+
+    .header-navbar--left_logodiv {
+        height: 2rem;
+    }
+
+
+    .header {
+        height: 300px;
+        clip-path: polygon(100% 0, 100% 69%, 77% 94%, 0 83%, 0 0);
+    }
+
+    .header-hero {
+        /* height: 100px; */
+        background-position: top;
+        padding-top: 0.1rem;
+    }
+
+    .header-hero--left {
+        padding: 0.4rem 0rem;
+        width: 50%;
+    }
+
+    .header-hero--left_top__title {
+        font-size: 1rem;
+        line-height: 1rem;
+        font-weight: 500;
+        padding: 5px 0px;
+    }
+
+    .header-hero--left_top__call {
+        font-size: 0.6rem;
+        font-weight: 300;
+        padding: 5px 0px;
+    }
+
+    .header-navbar--right li {
+        display: none;
+    }
+
+    .header-navbar--right .link {
+        font-size: 0.5rem;
+        padding: 0.2rem;
+        border-radius: 0.2rem;
+    }
+
+    .header-hero--left_bottom__first {
+        margin: 5px 0px;
+        font-size: 0.5rem;
+        padding: 0.5rem;
+    }
+
+    .header-hero--left_bottom__second {
+        padding: 0.5rem;
+        margin: 5px 0px;
+        font-size: 0.5rem;
+    }
+}

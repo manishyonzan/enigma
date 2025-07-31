@@ -1,0 +1,46 @@
+.trusted {
+    margin-top: 5rem;
+    width: var(--contentWidth);
+    padding: 1rem 0rem;
+    border-radius: 0.5rem;
+}
+
+.trusted-head {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+
+    padding-bottom: 0.5rem;
+}
+
+.trusted-main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .05);
+    padding: 0.5rem;
+}
+
+.trusted-main--brand {
+    width: 18%;
+}
+
+
+.trusted-main--brand_logo {
+    width: 80%;
+    height: auto;
+    aspect-ratio: 1/1;
+}
+
+.trusted-main--brand_logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+@media screen and (max-width: 1250px) {
+    .trusted {
+        width: 100%;
+    }
+}
