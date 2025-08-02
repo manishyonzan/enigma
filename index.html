@@ -4,16 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" type="image/png" href="logo.jpg">
+
+    <title>Enigma Advertising and Marketing (P.) Ltd.</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="trusted.css">
     <link rel="stylesheet" href="services.css">
     <link rel="stylesheet" href="solution.css">
     <link rel="stylesheet" href="aboutus.css">
     <link rel="stylesheet" href="footer.css">
-
-
-
+    <link rel="stylesheet" href="swiper.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 </head>
 
@@ -107,6 +108,9 @@
         </div> -->
 
 
+        <!-- swiper -->
+
+
 
 
 
@@ -155,6 +159,75 @@
         </div>
 
 
+
+        <div class="swipermain">
+            <h2 class="swiper-head">Join Us.</h2>
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+
+                    <div class="swiper-slide">
+                        <div class="swiper-slide--text">
+                            <h3 class="swiper-slide--text_firsthead">Welcome to Enigma</h3>
+                            <h5 class="swiper-slide--text_secondhead">Advertising and Marketing</h5>
+                            <p class="swiper-slide--text_para">
+                                Step into the world of Enigma, where bold ideas meet strategic brilliance. Ready to
+                                transform your brand into an
+                                unforgettable experience. </p>
+                        </div>
+                        <img class="swiper-slide--image" src="resources/slider/car.jpg" alt="first slider">
+                    </div>
+
+
+                    <div class="swiper-slide">
+                        <div class="swiper-slide--text">
+                            <h3>Ace your Marketing Game</h3>
+                            <p class="swiper-slide--text_para">Join us as we redefine your approach leveraging
+                                innovative techniques that drive impact, boost visibility, and amplify your presence
+                                like never before</p>
+                        </div>
+                        <img class="swiper-slide--image" src="resources/slider/brand.jpg" alt="first slider">
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide--text">
+                            <h3>Let's Transform your Marketing</h3>
+                            <h5 class="swiper-slide--text_secondhead">Strategy Together</h5>
+
+                            <p class="swiper-slide--text_para">Reach your audience with precision, captivate with
+                                purpose, and achieve results that
+                                speak volumes.
+                            </p>
+                        </div>
+                        <img class="swiper-slide--image" src="resources/slider/think-diffferent.jpg"
+                            alt="creative slider">
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide--text">
+                            <h3>Market Strategically</h3>
+                            <h5 class="swiper-slide--text_secondhead">With Creativity</h5>
+
+                            <p class="swiper-slide--text_para">We blend strategic vision with creativity mastery, making
+                            </p>
+                            <p class="swiper-slide--text_para">Your brand stand out and thrive in market</p>
+                        </div>
+                        <div class="swiper-slide--imagelayout"></div>
+                        <img class="swiper-slide--image" src="resources/slider/creative.jpg" alt="market strategically">
+                    </div>
+
+
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
 
 
 
@@ -237,6 +310,9 @@
                             deliver measurable impact—empowering businesses to thrive in today’s fast-moving digital
                             landscape with clarity and creativity.
                         </p>
+                        <div class="aboutus-main--text_top__btndiv">
+                            <a href="aboutus.html" class="aboutus-main--text_top__btndiv-btn">See more &#x2192;</a>
+                        </div>
                     </div>
                 </div>
                 <div class="aboutus-main--image">
@@ -294,6 +370,45 @@
 
 
     </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="scripts.js"></script>
+
+    <script>
+
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: true,
+            },
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                dynamicBullets: true,
+            },
+
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            // scrollbar: {
+            // el: '.swiper-scrollbar',
+            // },
+        });
+
+
+    </script>
+
 
 
 </body>

@@ -46,7 +46,7 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 1rem 0rem;
-    
+
     border-top: 0.5px solid rgb(233, 229, 221);
     border-bottom: 0.5px solid rgb(233, 229, 221);
 }
@@ -90,12 +90,12 @@ footer {
     }
 
 
-    .footer-main--top h1{
+    .footer-main--top h1 {
         font-size: 1.5rem;
         font-weight: 600;
     }
 
-    .footer-main--top h5{
+    .footer-main--top h5 {
         font-size: 0.7rem;
         font-weight: 500;
     }

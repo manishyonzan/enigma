@@ -1,11 +1,13 @@
 .service {
     width: var(--contentWidth);
     padding: 3rem 0rem;
+
 }
 
 .service-head {
     text-align: center;
     padding-bottom: 0.5rem;
+
 }
 
 .service-head h4 {
