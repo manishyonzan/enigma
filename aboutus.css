@@ -375,6 +375,12 @@
 @media screen and (max-width:760px) {
 
 
+    .aboutpage-navbar--left_logodiv {
+        width: 3rem;
+    }
+
+
+
     .aboutus {
         width: 100%;
     }
