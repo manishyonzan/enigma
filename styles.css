@@ -230,9 +230,6 @@ main {
 
 
 
-    .header-navbar--left_logodiv {
-        height: 2rem;
-    }
 
 
     .header {
@@ -253,6 +250,7 @@ main {
 
     .header-navbar--left_logodiv {
         width: 3rem;
+        height: auto;
     }
 
     .header-hero--left_top__title {
